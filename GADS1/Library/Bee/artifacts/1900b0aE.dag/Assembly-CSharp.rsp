@@ -359,8 +359,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/scripts/chats.cs"
+"Assets/scripts/likesCURRENCY.cs"
+"Assets/scripts/optionController.cs"
 "Assets/scripts/people.cs"
+"Assets/scripts/question.cs"
 "Assets/scripts/speaker.cs"
+"Assets/scripts/SWITCHOFF.cs"
+"Assets/scripts/talkController.cs"
 "Assets/scripts/talkDisplay.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
