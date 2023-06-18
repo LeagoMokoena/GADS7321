@@ -19,4 +19,6 @@ public class chats : ScriptableObject
     public people left;
     public people right;
     public line[] lines;
+    public question question;
+    public chats nextchat;
 }

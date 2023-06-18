@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d471a515901e93b4693d318e5d8dae78, type: 3}
+  m_Name: talker
+  m_EditorClassIdentifier: 
+  tex: lets talk
+  options:
+  - tex: hello
+    _chats: {fileID: 11400000, guid: 716bd1c460d69e247a5b82fb1ab598e0, type: 2}
+  - tex: note
+    _chats: {fileID: 11400000, guid: 2acaf13b15dbe10409cccdfc922a47db, type: 2}
+  - tex: yeser
+    _chats: {fileID: 11400000, guid: 5449cbd051d9e32479687d486bc12fc7, type: 2}
