@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad07b6bca7a27c4db805c69831c324a, type: 3}
+  m_Name: cause of low mental helath
+  m_EditorClassIdentifier: 
+  tex: cause of low mental health
+  options:
+  - tex: phone
+    _chats: {fileID: 11400000, guid: ede701dc9d504994a945d931371c1d16, type: 2}
+  - tex: not enough likes
+    _chats: {fileID: 11400000, guid: 014b720dd333f8a42940b0684da8e7ad, type: 2}
+  - tex: not playing enough games
+    _chats: {fileID: 11400000, guid: 363396c4c40980342a8f61b0ecae2ed5, type: 2}
+  - tex: not getting populer peoples attention
+    _chats: {fileID: 11400000, guid: aebcaabe5d0096b428515ec1ccd3a192, type: 2}

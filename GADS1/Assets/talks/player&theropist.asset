@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb403e0312f92714690c6fbed426e04c, type: 3}
+  m_Name: player&theropist
+  m_EditorClassIdentifier: 
+  left: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+  right: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+  lines:
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: 'Hello there '
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: 'Hello '
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: 'Why have you come to me today '
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: i want to know what is the cause of my low mental health
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: 'what do you think the cause is '
+  question: {fileID: 11400000, guid: 173ed364f6676e6438cc7dc673b20dd4, type: 2}
+  nextchat: {fileID: 0}

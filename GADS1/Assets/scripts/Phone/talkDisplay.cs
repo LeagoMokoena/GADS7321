@@ -35,8 +35,6 @@ public class talkDisplay : MonoBehaviour
         Lspeaker = left.GetComponent<speaker>();
         Rspeaker = right.GetComponent<speaker>();
 
-        Lspeaker.Speaker = talk.left;
-        Rspeaker.Speaker = talk.right;
 
     }
 
@@ -81,13 +79,9 @@ public class talkDisplay : MonoBehaviour
         if (activeLine < talk.lines.Length)
         {
             display();
-            activeLine++;
         }
         else
         {
-            Lspeaker.gameObject.SetActive(false);
-            Rspeaker.gameObject.SetActive(false);
-            activeLine = 0;
             Advancetalk();
         }
     }

@@ -14,7 +14,7 @@ public class talkController : MonoBehaviour
 
     public static talkController addbutton(Button button, cho choice, int num)
     {
-        int butSpace = -44;
+        int butSpace = -100;
         Button button1 = Instantiate(button);
 
         button1.transform.SetParent(button.transform.parent);
