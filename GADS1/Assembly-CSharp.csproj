@@ -64,6 +64,7 @@
     <Compile Include="Assets\scripts\MatchThreeEngine\TileDataMatrixUtility.cs" />
     <Compile Include="Assets\scripts\MatchThreeEngine\TileTypeAsset.cs" />
     <Compile Include="Assets\scripts\Phone\speaker.cs" />
+    <Compile Include="Assets\scripts\Phone 1\newScene.cs" />
     <Compile Include="Assets\scripts\MatchThreeEngine\Board.cs" />
     <Compile Include="Assets\scripts\MatchThreeEngine\Match.cs" />
     <Compile Include="Assets\scripts\Phone\TargetFrameRateSetter1.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\scripts\MatchThreeEngine\TileData.cs" />
     <Compile Include="Assets\scripts\Phone\phone.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\scripts\Phone\optionController.cs" />
     <Compile Include="Assets\scripts\Phone\talkController.cs" />
     <Compile Include="Assets\scripts\MatchThreeEngine\Row.cs" />
     <Compile Include="Assets\scripts\Phone\health.cs" />
@@ -85,8 +87,6 @@
     <Compile Include="Assets\scripts\Tennis\Computer.cs" />
     <Compile Include="Assets\scripts\Tennis\Player1.cs" />
     <Compile Include="Assets\scripts\MenuScripts\mainMenuScript\MainMenu.cs" />
-    <Compile Include="Assets\scripts\Phone 1\newScene.cs" />
-    <Compile Include="Assets\scripts\Phone\optionController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

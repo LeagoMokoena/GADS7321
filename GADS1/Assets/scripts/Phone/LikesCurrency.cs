@@ -14,7 +14,7 @@ public class LikesCURRENCY : MonoBehaviour
     void Start()
     {
 
-        min = 0;
+        min = 10;
         likes = min;
     }
 
@@ -28,7 +28,7 @@ public class LikesCURRENCY : MonoBehaviour
 
     public void switchOff(int time)
     {
-        likes -= time;
+        likes--;
 
     }
 

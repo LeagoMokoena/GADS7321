@@ -8,8 +8,7 @@ public class phone : MonoBehaviour
     public GameObject phonePrefab;
     public GameObject timer;
     public bool phoneoff = false;
-    public Dropdown timerselect;
-    public LikesCURRENCY likes;
+    private LikesCURRENCY likes;
     public Text timerText;
     public enum times
     {
@@ -24,20 +23,24 @@ public class phone : MonoBehaviour
     void Start()
     {
         timerText.text = "How long do you want the phone off";
+        phoneoff = true;
+        var drop = transform.GetComponent<Dropdown>();
+        likes = new LikesCURRENCY();    
+        drop.options.Clear();  
 
+        drop.options.Add(new Dropdown.OptionData() { text = times.One_min.ToString() }); 
+        drop.options.Add(new Dropdown.OptionData() { text = times.One_hour.ToString() }); 
+        drop.options.Add(new Dropdown.OptionData() { text = times.One_day.ToString() }); 
+        drop.options.Add(new Dropdown.OptionData() { text = times.One_week.ToString() });
+
+        OffTime(drop);
+        drop.onValueChanged.AddListener(delegate { OffTime(drop); });
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (phoneoff)
-        {
-            this.gameObject.SetActive(false);
-        }
-        else
-        {
-            this.gameObject.SetActive(true);
-        }
+    
     }
 
     void Off()
@@ -46,9 +49,21 @@ public class phone : MonoBehaviour
         timer.gameObject.SetActive(true);
     }
 
-    void OffTime(int num)
+    void OffTime(Dropdown down)
     {
-        if (num == 0)
+        int num = down.value;
+        
+        timerText.text = num.ToString();
+
+        if(num > 0)
+        {
+            phoneoff = false;
+            likes.switchOff(num);
+            timer.gameObject.SetActive(false);
+            phonePrefab.gameObject.SetActive(true);
+        }
+
+        /*if (down. == 0)
         {
             likes.switchOff(0);
             phoneoff = false;
@@ -72,7 +87,7 @@ public class phone : MonoBehaviour
             phoneoff = false;
             timer.gameObject.SetActive(false);
         }
-
+        */
 
     }
 }

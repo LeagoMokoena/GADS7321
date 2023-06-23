@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 54890906}
   - component: {fileID: 54890905}
   - component: {fileID: 54890904}
+  - component: {fileID: 54890907}
   m_Layer: 5
   m_Name: Dropdown (Legacy)
   m_TagString: Untagged
@@ -360,15 +361,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: One_min
-      m_Image: {fileID: 0}
-    - m_Text: One_hour
-      m_Image: {fileID: 0}
-    - m_Text: One_day
-      m_Image: {fileID: 0}
-    - m_Text: One_week
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -411,6 +404,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54890902}
   m_CullTransparentMesh: 1
+--- !u!114 &54890907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54890902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5762d5be367e74db4fc0a0cb738f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phonePrefab: {fileID: 878208530}
+  timer: {fileID: 524922831}
+  phoneoff: 0
+  timerText: {fileID: 607313027}
 --- !u!1 &124045098
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +912,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: One_min
+  m_Text: 
 --- !u!222 &361105196
 CanvasRenderer:
   m_ObjectHideFlags: 0

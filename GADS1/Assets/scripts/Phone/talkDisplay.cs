@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class questionEvent : UnityEvent<question> { }
@@ -57,6 +58,7 @@ public class talkDisplay : MonoBehaviour
         talkstArt = false;
         Lspeaker.gameObject.SetActive(false);
         Rspeaker.gameObject.SetActive(false);
+        SceneManager.LoadScene("DemoScene");
     }
 
     private void Initialize()
