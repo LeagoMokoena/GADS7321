@@ -283,7 +283,8 @@ AudioSource:
   m_GameObject: {fileID: 452731559}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 3319ffb168aefaa45810716a88ecfa73, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 3319ffb168aefaa45810716a88ecfa73,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b14352c82bffe6e47b957ea51c18afc5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.03
@@ -1284,6 +1285,7 @@ GameObject:
   - component: {fileID: 1152542299}
   - component: {fileID: 1152542298}
   - component: {fileID: 1152542302}
+  - component: {fileID: 1152542303}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1386,6 +1388,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69f2ec5b27072944bb7a2d2826af841f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1152542303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152542297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977d65063cb92bc4aba5f721c179a672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1186508962
@@ -1524,16 +1538,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1186508964}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 1152542303}
+        m_TargetAssemblyTypeName: newScene, Assembly-CSharp
+        m_MethodName: Loaded
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: DemoScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1298689481

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/[Free] Phone/DemoScene.unity
+    path: Assets/Scenes/DemoScene.unity
     guid: 7c6f3b659fd48ce449a918573b9b201c
   - enabled: 1
     path: Assets/Scenes/Menu.unity

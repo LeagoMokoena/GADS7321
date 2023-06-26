@@ -87,6 +87,9 @@
     <Compile Include="Assets\scripts\Tennis\Computer.cs" />
     <Compile Include="Assets\scripts\Tennis\Player1.cs" />
     <Compile Include="Assets\scripts\MenuScripts\mainMenuScript\MainMenu.cs" />
+    <Compile Include="Assets\scripts\Phone\PHONE1.cs" />
+    <Compile Include="Assets\amount.cs" />
+    <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

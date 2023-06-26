@@ -27,10 +27,13 @@ namespace MatchThreeEngine
 		[SerializeField] private bool ensureNoStartingMatches;
 
 		private readonly List<Tile> _selection = new List<Tile>();
+		private LikesCURRENCY _currency;
+		public GameObject victory;
 
 		private bool _isSwapping;
 		private bool _isMatching;
 		private bool _isShuffling;
+		public float threeMatched = 0;
 
 		public event Action<TileTypeAsset, int> OnMatch;
 
@@ -53,6 +56,8 @@ namespace MatchThreeEngine
 
 		private void Start()
 		{
+			_currency = new LikesCURRENCY();
+
 			for (var y = 0; y < rows.Length; y++)
 			{
 				for (var x = 0; x < rows.Max(row => row.tiles.Length); x++)
@@ -71,6 +76,7 @@ namespace MatchThreeEngine
 			if (ensureNoStartingMatches) StartCoroutine(EnsureNoStartingMatches());
 
 			OnMatch += (type, count) => Debug.Log($"Matched {count}x {type.name}.");
+			threeMatched++;
 		}
 
 		private void Update()
@@ -85,6 +91,11 @@ namespace MatchThreeEngine
 					Select(GetTile(bestMove.X2, bestMove.Y2));
 				}
 			}
+
+			if(threeMatched > 3)
+			{
+				victory.gameObject.SetActive(true);
+			}
 		}
 
 		private IEnumerator EnsureNoStartingMatches()
@@ -94,7 +105,6 @@ namespace MatchThreeEngine
 			while (TileDataMatrixUtility.FindBestMatch(Matrix) != null)
 			{
 				Shuffle();
-
 				yield return wait;
 			}
 		}
@@ -141,7 +151,6 @@ namespace MatchThreeEngine
 			while (TileDataMatrixUtility.FindBestMove(matrix) == null || TileDataMatrixUtility.FindBestMatch(matrix) != null)
 			{
 				Shuffle();
-
 				matrix = Matrix;
 			}
 
@@ -228,8 +237,9 @@ namespace MatchThreeEngine
 			}
 
 			_isMatching = false;
-
-			return didMatch;
+			threeMatched++;
+            GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes++;
+            return didMatch;
 		}
 
 		private void Shuffle()
@@ -239,8 +249,8 @@ namespace MatchThreeEngine
 			foreach (var row in rows)
 				foreach (var tile in row.tiles)
 					tile.Type = tileTypes[Random.Range(0, tileTypes.Length)];
-
-			_isShuffling = false;
+            GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes++;
+            _isShuffling = false;
 		}
 	}
 }

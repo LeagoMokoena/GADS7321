@@ -6,23 +6,21 @@ using UnityEngine.UI;
 public class LikesCURRENCY : MonoBehaviour
 {
     public int time;
-    public int min;
+    public float min;
     public bool phoneoff = false;
-    public Text likesAmount;
-    public int likes;
+    public float likes = 10;
     // Start is called before the first frame update
     void Start()
     {
-
         min = 10;
-        likes = min;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        likesAmount.text = likes.ToString();
+        GameObject.FindWithTag("likesText").GetComponent<amount>().likesAmount.text = likes.ToString();
     }
 
 
@@ -32,7 +30,7 @@ public class LikesCURRENCY : MonoBehaviour
 
     }
 
-    public void AddLikes(int _likes)
+    public void AddLikes(float _likes)
     {
         likes += _likes;
     }
