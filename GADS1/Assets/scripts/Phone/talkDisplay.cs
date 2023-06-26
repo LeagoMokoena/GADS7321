@@ -56,6 +56,8 @@ public class talkDisplay : MonoBehaviour
     {
         talk = null;
         talkstArt = false;
+        GameObject.FindWithTag("pone").GetComponent<health>().healths += 20;
+        GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes -= 10;
         Lspeaker.gameObject.SetActive(false);
         Rspeaker.gameObject.SetActive(false);
         SceneManager.LoadScene("DemoScene");

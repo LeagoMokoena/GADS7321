@@ -12,8 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb403e0312f92714690c6fbed426e04c, type: 3}
   m_Name: phoneChat
   m_EditorClassIdentifier: 
-  left: {fileID: 0}
-  right: {fileID: 0}
-  lines: []
+  left: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+  right: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+  lines:
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: Why do you think your phone is your mental health problem
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: I think it is because it what i hear is the main cause of most mental
+      helath problems
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: 'That is what is said, because the phone is a daily device that every
+      person needs and some find it hard to switch it of '
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: Well, I admit i do use my phone alot
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: 'That''s ok, dont feel bad. Many people experiance that same problem as
+      you, even i have that pronlem. What I suggest to you is to try switch off your
+      phone for as long as you can, and in the time not used with your phone, do
+      other actvities like play sparts like tennis '
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: "Ok, i will try \n\nclick z to exit "
   question: {fileID: 0}
   nextchat: {fileID: 0}

@@ -7,7 +7,6 @@ public class phone : MonoBehaviour
 {
     public GameObject phonePrefab;
     public GameObject timer;
-    public GameObject timerPrefab;
     public bool phoneoff = false;
     public Text timerText;
     public float likes;
@@ -70,23 +69,23 @@ public class phone : MonoBehaviour
             phoneoff = false;
             if(num ==  1)
             {
-                timerPrefab.GetComponent<LikesCURRENCY>().likes--;
-                timerPrefab.GetComponent<health>().healthSlider.value++;
+                GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes -= 1;
+                GameObject.FindWithTag("pone").GetComponent<health>().healths += 1;
             }
             else if(num == 2)
             {
-                timerPrefab.GetComponent<LikesCURRENCY>().likes-=5;
-                timerPrefab.GetComponent <health>().healthSlider.value+=10;
+                GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes -= 5;
+                GameObject.FindWithTag("pone").GetComponent<health>().healths += 10;
             }
             else if (num == 3)
             {
-                timerPrefab.GetComponent<LikesCURRENCY>().likes-=10;
-                timerPrefab.GetComponent<health>().healthSlider.value +=15;
+                GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes -= 10;
+                GameObject.FindWithTag("pone").GetComponent<health>().healths += 15;
             }
             else
             {
-                timerPrefab.GetComponent<LikesCURRENCY>().likes-=15;
-                timerPrefab.GetComponent<health>().healthSlider.value +=20;
+                GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes -= 15;
+                GameObject.FindWithTag("pone").GetComponent<health>().healths += 20;
             }
             timer.gameObject.SetActive(false);
             phonePrefab.gameObject.SetActive(true);

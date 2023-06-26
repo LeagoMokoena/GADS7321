@@ -8,11 +8,11 @@ public class LikesCURRENCY : MonoBehaviour
     public int time;
     public float min;
     public bool phoneoff = false;
-    public float likes = 10;
+    public float likes;
     // Start is called before the first frame update
     void Start()
     {
-        min = 10;
+        likes = 50;
         
     }
 

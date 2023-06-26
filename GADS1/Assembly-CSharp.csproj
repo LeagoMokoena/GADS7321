@@ -69,6 +69,7 @@
     <Compile Include="Assets\scripts\MatchThreeEngine\Match.cs" />
     <Compile Include="Assets\scripts\Phone\TargetFrameRateSetter1.cs" />
     <Compile Include="Assets\scripts\Tennis\ScoreManager.cs" />
+    <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\scripts\Phone\people.cs" />
     <Compile Include="Assets\scripts\Phone\question.cs" />
     <Compile Include="Assets\scripts\MatchThreeEngine\Move.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\scripts\Phone\talkController.cs" />
     <Compile Include="Assets\scripts\MatchThreeEngine\Row.cs" />
     <Compile Include="Assets\scripts\Phone\health.cs" />
+    <Compile Include="Assets\amount.cs" />
     <Compile Include="Assets\scripts\MusicEngine\Music.cs" />
     <Compile Include="Assets\scripts\Snake\Snake.cs" />
     <Compile Include="Assets\scripts\MatchThreeEngine\PointsManager.cs" />
@@ -88,8 +90,8 @@
     <Compile Include="Assets\scripts\Tennis\Player1.cs" />
     <Compile Include="Assets\scripts\MenuScripts\mainMenuScript\MainMenu.cs" />
     <Compile Include="Assets\scripts\Phone\PHONE1.cs" />
-    <Compile Include="Assets\amount.cs" />
-    <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\scripts\Tennis\TIMER.cs" />
+    <Compile Include="Assets\scripts\ammo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -18,12 +18,16 @@ MonoBehaviour:
   - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
     title: 'why do think playing more games will help '
   - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
-    title: when playing games, i can increase my amoun of likes and have more people
+    title: when playing games, i can increase my amount of likes and have more people
       interested in me
   - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
-    title: 'ok then, play more games and come back to me if on changes on your mental
-      helath '
+    title: Have you ever thought of playing games for you and not for attention
   - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
-    title: Ok
+    title: 'No i haven''t '
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: Ok then, I suggest for now on play for just entertaining yourself and
+      maybe play outdoor games like tennis
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: "I will think about it \n\nclick z to exit talk"
   question: {fileID: 0}
   nextchat: {fileID: 0}

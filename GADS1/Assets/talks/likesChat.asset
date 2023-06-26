@@ -12,8 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb403e0312f92714690c6fbed426e04c, type: 3}
   m_Name: likesChat
   m_EditorClassIdentifier: 
-  left: {fileID: 0}
-  right: {fileID: 0}
-  lines: []
+  left: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+  right: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+  lines:
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: Why do think having many likes will better your mental health
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: Having more likes tells me that poeple have more attention for me and
+      that I wont be seen as not being a person
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: I understand that its just that strive for other people attention can
+      cause mental health problems as you will be stressed into making more likes
+      and that the comments they respond back to you may be quite hurtful
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: 'Ok, os you saying i should stop increasing my likes '
+  - people: {fileID: 11400000, guid: 626202fe7c674ed449fa2d73c5c55216, type: 2}
+    title: I am not saying, just suggesting that you dont make producing likes a
+      necessity for yourself as all people are people and likes dont need to prove
+      that. Just think about it
+  - people: {fileID: 11400000, guid: c6a9c27c123c82248a604491831ec3f7, type: 2}
+    title: "Ok, I will think about \n\nclick z to exit "
   question: {fileID: 0}
   nextchat: {fileID: 0}

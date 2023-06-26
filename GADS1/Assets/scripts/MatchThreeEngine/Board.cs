@@ -238,7 +238,7 @@ namespace MatchThreeEngine
 
 			_isMatching = false;
 			threeMatched++;
-            GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes++;
+            GameObject.FindWithTag("pone").GetComponent<LikesCURRENCY>().likes += 10;
             return didMatch;
 		}
 

@@ -20,5 +20,3 @@ MonoBehaviour:
     _chats: {fileID: 11400000, guid: 014b720dd333f8a42940b0684da8e7ad, type: 2}
   - tex: not playing enough games
     _chats: {fileID: 11400000, guid: 363396c4c40980342a8f61b0ecae2ed5, type: 2}
-  - tex: not getting populer peoples attention
-    _chats: {fileID: 11400000, guid: aebcaabe5d0096b428515ec1ccd3a192, type: 2}

@@ -66,12 +66,12 @@ public class Computer : MonoBehaviour
         if (Ball.position.y > 0)
         {
             Debug.Log("Ball Pos " + Ball.position.y);
-            Ai.position = new Vector3(Ai.position.x, Ball.position.y, Ai.position.z);
+            Ai.position = new Vector3(Ai.position.x, Ball.position.y - 5, Ai.position.z);
         }
         else if (Ball.position.y < 0)
         {
             Debug.Log("Ball Pos " + Ball.position.y);
-            Ai.position = new Vector3(Ai.position.x, Ball.position.y, Ai.position.z);
+            Ai.position = new Vector3(Ai.position.x, Ball.position.y + 5, Ai.position.z);
         }
     }
 }
